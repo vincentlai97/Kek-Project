@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>My first Three.js app</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <script src="three.js"></script>
+    <script src="AAObject.js"></script>
+    <script src="Application.js"></script>
+    <script src="MyApp.js"></script>
+    <script>
+        var app = new MyApp();
+        app.Init(800, 600);
+        app.Render();
+    </script>
+</body>
+
+</html>
